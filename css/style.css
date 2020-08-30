@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
+:root{
+  --primary-color : white;
+  --contrast-color : rgb(240, 248, 255);
+  --dark-color : black ;
+}
+
+
 body{
   font-family: 'Poppins', sans-serif;
 }
@@ -16,6 +24,10 @@ body{
 
 .text-cover {
   padding-top: 15% ;
+  background-image: url("../images/cake1.gif"); 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+  height: 75vh;
 }
 
 .imgprop {
@@ -28,17 +40,17 @@ body{
 
 
 .btnprop {
-  background-color: rgb(240, 248, 255) !important;
-  color: black;
+  background-color: var(--contrast-color)!important;
+  color: var(--dark-color);
   border-radius: 50px;
   border: 3px solid;
   transition: 0.35s ease;
-  border-color: black;
+  border-color: var(--dark-color);
 }
 
 .btnprop:hover {
-  background-color: black !important;
-  border-color: black;
+  background-color: var(--dark-color) !important;
+  border-color: var(--dark-color);
 }
 
 
@@ -49,7 +61,7 @@ body{
 
 
 .navbar{
-    background-color: black !important;
+    background-color: var(--dark-color) !important;
 }
 
 
@@ -75,7 +87,7 @@ body{
 
 
 .btnprop2:hover .fa{
-    color: white;
+    color: var(--primary-color);
 }
 
 
@@ -84,16 +96,16 @@ body{
 }
 
 a {
-    color: white;
+    color: var(--primary-color);
     
 }
 a:hover{
-  color: white;
+  color: var(--primary-color);
  
 }
 
 p {
-    color: white;
+    color: var(--primary-color);
     font-weight: 200;
 }
 
@@ -103,7 +115,7 @@ p {
 
 .text-left{
   font-size: 20px;
-  color: black;
+  color: var(--dark-color);
 }
 
 .card-title{
@@ -112,11 +124,11 @@ p {
 }
 
 .txt{
-  color: black;
+  color: var(--dark-color);
   /* padding: 5%; */
   font-size: 20px;
   font-weight: 200;
-  color: white;
+  color: var(--primary-color);
   position: absolute;
   top: 40%;
   left: 50%;
@@ -130,7 +142,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: var(--dark-color);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -152,13 +164,14 @@ p {
 .servicon-label{
 
   padding: 0 25%;
-  color: white; 
+  color: var(--contrast-color); 
   font-size: 30px; 
   font-weight: 400;
 
 }
 
 .service-cover{
+  background-image: linear-gradient(rgba(0,0,0, 0.88), rgba(0,0,0, 0.85)),  url("../images/delivery-cover.png");
   background-repeat: no-repeat !important; 
   background-position: center !important; 
   background-size: cover !important;
@@ -167,7 +180,7 @@ p {
 .footer-logo{
   font-family: 'Pacifico'; 
   font-size: 50px;
-  color: white;
+  color: var(--contrast-color);
   transition: 0.5s ease;
 }
 
@@ -178,5 +191,39 @@ p {
 .desc{
   font-size: 15px;
   font-weight: 200;
-  color: rgb(240, 248, 255) ;
+  color: var(--contrast-color);
+}
+
+.head-logo{
+  margin-right: 30%; height: 7vh; font-family: 'Pacifico';
+}
+
+.home-l1{
+  font-size: 30px; font-weight: 600;padding-top: 20px;
+}
+
+.home-l2{
+  font-size: 90px; font-weight: 900;
+}
+
+.home-l3{
+  font-size: 25px; font-weight: 400;
+}
+
+.product-txt{
+  font-weight: 600;font-size: 70px; padding-bottom: 5%;
+}
+
+.about-cover{
+  background-image: linear-gradient(rgba(240, 248, 255, 0.88), rgba(240, 248, 255, 0.85)),  url("../images/bakery.jpg"); background-size: cover;
+}
+
+.animation{
+  font-weight: 200;
+}
+.about-img{
+  border: 10px floralwhite solid;margin-top: 10px;overflow:hidden ;
+}
+.about-head{
+  color:var(--dark-color); font-weight: 600; font-size: 70px;
 }
