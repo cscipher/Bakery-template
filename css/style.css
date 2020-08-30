@@ -174,3 +174,9 @@ p {
 .footer-logo:hover{
   color: rgb(137, 149, 160) ;
 }
+
+.desc{
+  font-size: 15px;
+  font-weight: 200;
+  color: rgb(240, 248, 255) ;
+}
