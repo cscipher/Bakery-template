@@ -5,13 +5,13 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 @media (min-width: 768px){
-.jumbotron {
-    padding-top: 12rem;
-}
-
 .jumbotron .container{
   max-width: 100%;
+  padding: 0;
 }
+}
+.text-cover {
+  padding-top: 15% ;
 }
 
 .imgprop {
@@ -54,56 +54,11 @@ body{
 }
 
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 0;
-  transition: 0.5s ease;
-  background-color: black;
-  /* border-radius: 100%; */
-}
 
-.overlay1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    color: black;
-    padding-top: 30%;
-    font-size: 20px;
-    font-weight: 200;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .3s ease;
-  }
 .card{
     position: relative;
 }
 
-.card:hover .overlay1 {
-    width: 100%;
-    color: white;
-  }
-  
-
-.text {
-  color: white;
-  padding-top: 30%;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 .navbar{
     background-color: black !important;
@@ -215,3 +170,34 @@ p {
   font-family: 'Pacifico';
   font-size: 25px;
 }
+
+.txt{
+  color: black;
+  /* padding: 5%; */
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: center;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .35s ease;
+}
+
+.card:hover .overlay {
+  width: 100%;
+}
+
