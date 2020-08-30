@@ -164,6 +164,7 @@ p {
 
 .text-left{
   font-size: 20px;
+  color: black;
 }
 
 .card-title{
@@ -201,3 +202,25 @@ p {
   width: 100%;
 }
 
+.servicons{
+  padding: 5%;
+  margin: 0 20%;
+  width: 60%;
+  filter: invert();
+  height: auto;
+}
+
+.servicon-label{
+
+  padding: 0 25%;
+  color: white; 
+  font-size: 30px; 
+  font-weight: 400;
+
+}
+
+.service-cover{
+  background-repeat: no-repeat !important; 
+  background-position: center !important; 
+  background-size: cover !important;
+}
