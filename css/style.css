@@ -19,18 +19,15 @@ body{
 }
 
 .imgprop {
-  /* border-radius: 100%; */
-  /* width: 40vh; */
   height: 45vh;
   display: block;
   width: 100%;
-  /* height: auto; */
   transition: 0.5s ease;
 }
 
 
 
-.btnprop2 {
+.btnprop {
   background-color: rgb(240, 248, 255) !important;
   color: black;
   border-radius: 50px;
@@ -39,22 +36,9 @@ body{
   border-color: black;
 }
 
-.btnprop2:hover {
-  background-color: black !important;
-  border-color: black;
-}
-
-.btnprop {
-  margin-left: 45%;
-  margin-right: 45%;
-  margin-top: 7%;
-  background-color: rgb(240, 248, 255) !important;
-  
-  color: black;
-}
-
 .btnprop:hover {
   background-color: black !important;
+  border-color: black;
 }
 
 
@@ -78,51 +62,6 @@ body{
   padding: 5% 0;
 }
 
-.ml10 {
-  position: relative;
-  font-weight: 700;
-  font-size: 3em;
-}
-
-.ml1 {
-  position: relative;
-}
-
-.ml10 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.ml10 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
-}
-#slide {
-  position: absolute;
-  left: -200%;
-  /* background: black; */
-  -webkit-animation: slide ease-out forwards;
-  animation: slide 2s ease-out forwards;
-}
-
-
-@-webkit-keyframes slide {
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes slide {
-  100% {
-    left: 0;
-  }
-}
-
 .fa1 {
     padding: 20px;
     font-size: 30px;
@@ -139,10 +78,6 @@ body{
     color: white;
 }
 
-  
-.nav-item1{
-    /* width: 20vh; */
-}
 
 .nav-item{
     margin: 0 5%;
@@ -227,4 +162,15 @@ p {
   background-repeat: no-repeat !important; 
   background-position: center !important; 
   background-size: cover !important;
+}
+
+.footer-logo{
+  font-family: 'Pacifico'; 
+  font-size: 50px;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.footer-logo:hover{
+  color: rgb(137, 149, 160) ;
 }
