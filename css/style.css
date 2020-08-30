@@ -211,7 +211,10 @@ p {
 }
 
 .product-txt{
-  font-weight: 600;font-size: 70px; padding-bottom: 5%;
+  font-weight: 600;font-size: 55px; padding-bottom: 5%;
+}
+.contact-txt{
+  font-weight: 600;font-size: 55px; padding-top: 5%;
 }
 
 .about-cover{
@@ -225,5 +228,5 @@ p {
   border: 10px floralwhite solid;margin-top: 10px;overflow:hidden ;
 }
 .about-head{
-  color:var(--dark-color); font-weight: 600; font-size: 70px;
+  color:var(--dark-color); font-weight: 600; font-size: 55px;
 }
