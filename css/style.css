@@ -10,6 +10,10 @@ body{
   padding: 0;
 }
 }
+.jumbotron{
+  margin-bottom: 10%;
+}
+
 .text-cover {
   padding-top: 15% ;
 }
