@@ -12,22 +12,13 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
-@media (min-width: 768px){
-.jumbotron .container{
-  max-width: 100%;
-  padding: 0;
-}
-}
-.jumbotron{
-  margin-bottom: 10%;
-}
 
 .text-cover {
-  padding-top: 15% ;
-  background-image: url("../images/cake1.gif"); 
+  padding-top: 15%;
+  background-image: url("../images/cake1.gif"); background-size: cover;
   background-attachment: fixed; 
   background-repeat: no-repeat; 
-  height: 75vh;
+  height: 100vh;
 }
 
 .imgprop {
@@ -53,6 +44,20 @@ body{
   border-color: var(--dark-color);
 }
 
+.btnprop2 {
+  background-color: var(--primary-color)!important;
+  color: var(--dark-color);
+  border-radius: 50px;
+  border: 3px solid;
+  transition: 0.35s ease;
+  margin: 2% 0;
+  border-color: var(--dark-color);
+}
+
+.btnprop2:hover {
+  background-color: var(--dark-color) !important;
+  border-color: var(--dark-color);
+}
 
 
 .card{
@@ -86,13 +91,14 @@ body{
   }
 
 
-.btnprop2:hover .fa{
+.btnprop:hover .fa{
     color: var(--primary-color);
 }
 
 
 .nav-item{
-    margin: 0 5%;
+    margin: 0 1rem;
+    font-size: 1.3rem;
 }
 
 a {
@@ -149,23 +155,23 @@ p {
   transition: .35s ease;
 }
 
-.card:hover .overlay {
+/* .card:hover .overlay {
   width: 100%;
-}
+} */
 
 .servicons{
   padding: 5%;
-  margin: 0 20%;
-  width: 60%;
+  /* margin: 0 20%; */
+  width: 30%;
   filter: invert();
   height: auto;
 }
 
 .servicon-label{
 
-  padding: 0 25%;
+  /* padding: 0 25%; */
   color: var(--contrast-color); 
-  font-size: 30px; 
+  font-size: 1.5rem; 
   font-weight: 400;
 
 }
@@ -189,32 +195,44 @@ p {
 }
 
 .desc{
-  font-size: 15px;
+  font-size: 1.1rem;
   font-weight: 200;
   color: var(--contrast-color);
 }
 
 .head-logo{
-  margin-right: 30%; height: 7vh; font-family: 'Pacifico';
+  height: 7vh; font-family: 'Pacifico';
+  font-size: 2rem;
+  margin-left: 10px;
 }
 
 .home-l1{
-  font-size: 30px; font-weight: 600;padding-top: 20px;
+  font-size: 2.5rem; font-weight: 600;padding-top: 50px;
 }
 
 .home-l2{
-  font-size: 90px; font-weight: 900;
+  font-size: 6rem; font-weight: 900;
 }
 
 .home-l3{
-  font-size: 25px; font-weight: 400;
+  font-size: 2.3rem; font-weight: 300;
 }
 
-.product-txt{
-  font-weight: 600;font-size: 55px; padding-bottom: 5%;
+.heading-txt{
+  font-weight: 600; font-size: 3rem ;padding-bottom: 5%;
 }
-.contact-txt{
-  font-weight: 600;font-size: 55px; padding-top: 5%;
+
+@media (min-width: 350px) {
+  .heading-txt { font-size: 2rem; }
+}
+@media (min-width: 768px) {
+  .heading-txt { font-size: 2.5rem; }
+}
+@media (min-width: 992px) {
+  .heading-txt { font-size: 3.25rem; }
+}
+@media (min-width: 1200px) {
+  .heading-txt { font-size: 3.5rem; }
 }
 
 .about-cover{
@@ -229,4 +247,13 @@ p {
 }
 .about-head{
   color:var(--dark-color); font-weight: 600; font-size: 55px;
+} 
+
+.crd-bg{
+  background-color: var(--contrast-color) ;
+  margin-bottom: 0 !important;
+}
+
+.row-marg{
+  margin: 0;
 }

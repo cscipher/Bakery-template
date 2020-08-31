@@ -52,7 +52,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -82,10 +82,9 @@
     <main role="main">
 
         <!-- Main home  -->
-        <section class="jumbotron text-cover text-center">
+        <section class="text-cover text-center">
             <div class="container" id="home" style="color: var(--contrast-color);">
-                <div  class="text-center home-l1">TASTY AND HEALTHY
-                </div>
+                <div class="text-center home-l1">TASTY AND HEALTHY</div>
                 <div class="text-center home-l2">BUTTER BAKES</div>
                 <div class="text-center home-l3">(Baking since 1985)</div>
             </div>
@@ -95,7 +94,7 @@
         <!-- Products  -->
         <section id="products" class="allmargs" style="background-color: var(--contrast-color);">
             <div class="container-fluid">
-                <div data-aos="zoom-in" data-aos-duration="1000" class="text-center product-txt">PRODUCTS</div>
+                <div data-aos="zoom-in" data-aos-duration="1000" class="text-center heading-txt">PRODUCTS</div>
                 <div class="card-deck" style="padding: 0 5%;">
 
                     <div class="card" data-aos="zoom-in" data-aos-duration="1000">
@@ -157,23 +156,23 @@
         <!-- Services  -->
         <section id="services" class="allmargs service-cover">
             <div class="container-fluid">
-                <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="product-txt text-center" style="color: var(--primary-color);">
+                <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                    class="heading-txt text-center" style="color: var(--primary-color);">
                     Services</div>
                 <div class="row">
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="col-sm">
-                        <img src="./images/truck.png" class="servicons">
+                        <img src="./images/truck.png" class="servicons mx-auto d-block">
                         <h1 class="servicon-label text-center">Lightining Fast Delivery</h1>
                         <div class="text-center desc">We provide delivery within 30-mins to your doorstep!</div>
                     </div>
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="col-sm">
-                        <img src="./images/clipboard.png" class="servicons">
+                        <img src="./images/clipboard.png" class="servicons mx-auto d-block">
                         <h1 class="servicon-label text-center">No Minimum Order Amounts</h1>
                         <div class="text-center desc">There is no minimum charges applicable on any order!</div>
                     </div>
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="col-sm">
-                        <img src="./images/location.png" class="servicons">
-                        <h1 class="servicon-label text-center">Live Order </h1>
-                        <h1 class="servicon-label text-center" style="line-height: 1.5rem;">Tracking</h1>
+                        <img src="./images/location.png" class="servicons mx-auto d-block">
+                        <h1 class="servicon-label text-center">Live Order Tracking</h1>
                         <div class="text-center desc">Track your order live on our webiste!</div>
                     </div>
                 </div>
@@ -186,7 +185,7 @@
         <section class="allmargs about-cover" id="about">
             <div class="container-fluid">
                 <div class="row padds">
-                    <div class="col-sm">
+                    <div class="col">
                         <div class="load" data-aos="fade-right" data-aos-duration="700" style="color:floralwhite;">
                             <span data-aos="fade-right" data-aos-duration="1500" class="text-wrapper">
                                 <div class="about-head">ABOUT</div>
@@ -231,30 +230,42 @@
 
         <!-- Contact Info -->
         <section id="contact">
-            
-            <div style="background-color: var(--contrast-color);" class="card text-center">
-                <div class="text-center contact-txt">CONTACT</div>
-                <form  class="container-fluid mx-auto" style="padding-top: 5%;">
-                    <div class="form-group row">
-                        <div class="col-sm-5 mx-auto">
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full name" required>
-                        </div>
+
+            <div style="background-color: var(--primary-color);" class="card text-center">
+                <div class="text-center heading-txt" style="padding: 5% 0 2% 0 !important;">CONTACT</div>
+                
+                <div class="row row-marg">
+                    <div class="col-12 col-md-6 mb-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115917.38125784123!2d72.98424835820312!3d24.78113078285613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1598803185969!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
                       </div>
-                    <div class="form-group row">
-                      <div class="col-sm-5 mx-auto">
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                      </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <form class="container-fluid" style="padding-top: 2%;">
+                          <div class="form-group row">
+                              <div class="col-sm-8 mx-auto">
+                                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="Full name" required>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <div class="col-sm-8 mx-auto">
+                                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="name@example.com" required>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <div class="col-sm-8 mx-auto">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1"
+                                      placeholder="Query goes here...." rows="8" required></textarea>
+                              </div>
+                          </div>
+                          <button class="btn btnprop2 mx-auto btn-primary">
+                              Submit
+                          </button>
+                      </form>
                     </div>
-                    <div class="form-group row">
-                      <div class="col-sm-5 mx-auto">
-                          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Query goes here...." rows="3" required></textarea>
-                      </div>
-                    </div>
-                    <button class="btn btnprop mx-auto btn-primary">
-                        Submit
-                    </button>
-                  </form>
-                <div class="card-body" style="margin: 2% 0;overflow: hidden;">
+                </div>
+                
+                <div class="card-body crd-bg" style="margin: 2% 0;overflow: hidden;">
                     <a data-aos="fade-down-right" data-aos-duration="1500" href="#"
                         class="btn btnprop btn-primary">Message on <i class="fa icon fa-whatsapp"
                             style="font-size:25px;"></i> </a>
@@ -266,7 +277,7 @@
             </div>
         </section>
 
-        
+
         <!-- Footer -->
         <footer class="page-footer indigo font-small" style="padding: 0; background: black;">
             <div class="container">
