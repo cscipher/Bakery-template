@@ -34,6 +34,9 @@ body{
   background-color: var(--contrast-color)!important;
   color: var(--dark-color);
   border-radius: 50px;
+  font-size: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
   border: 3px solid;
   transition: 0.35s ease;
   border-color: var(--dark-color);
@@ -48,6 +51,9 @@ body{
   background-color: var(--primary-color)!important;
   color: var(--dark-color);
   border-radius: 50px;
+  font-size: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
   border: 3px solid;
   transition: 0.35s ease;
   margin: 2% 0;
@@ -80,13 +86,11 @@ body{
 }
 
 .fa1 {
-    padding: 20px;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 50%;
     transition: 0.5s ease;
   }
 
@@ -252,8 +256,37 @@ p {
 .crd-bg{
   background-color: var(--contrast-color) ;
   margin-bottom: 0 !important;
+  margin: 2% 0;overflow: hidden;
 }
 
 .row-marg{
   margin: 0;
+  padding: 0 5%;
+}
+
+.ctnbx{
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+.box{
+  margin-top: 25px;
+  padding:2% 3%;
+  border: 4px var(--primary-color) solid;
+  border-radius: 35px;
+  color: var(--primary-color);
+  transition: 0.5s ease;
+}
+
+.box:hover .ctnbx{
+  color: var(--dark-color) !important;
+}
+
+.box:hover .fa1{
+  color: var(--dark-color);
+}
+
+.box:hover{
+  background-color: var(--primary-color);
 }
