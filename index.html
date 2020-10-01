@@ -82,7 +82,12 @@
         <section class="text-cover text-center">
             <div class="container" id="home" style="color: var(--contrast-color);">
                 <div class="text-center home-l1">TASTY AND HEALTHY</div>
-                <div class="text-center home-l2">BUTTER BAKES</div>
+                <div class="ml5 container">
+                    <span class="text-wrapper" style="color: var(--contrast-color);">
+                        <span class="letters letters-left home-l2">BUTTER</span>
+                        <span class="letters letters-right home-l2">BAKES</span>
+                    </span>
+                </div>
                 <div class="text-center home-l3">(Baking since 1985)</div>
             </div>
         </section>
@@ -230,38 +235,41 @@
 
             <div style="background-color: var(--primary-color);" class="card text-center">
                 <div class="text-center heading-txt" style="padding: 5% 0 2% 0 !important;">CONTACT</div>
-                
+
                 <div class="row row-marg">
                     <div class="col-12 col-md-6 mb-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115917.38125784123!2d72.98424835820312!3d24.78113078285613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1598803185969!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
-                      </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115917.38125784123!2d72.98424835820312!3d24.78113078285613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1598803185969!5m2!1sen!2sin"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                     <div class="col-12 col-md-6 mb-3">
-                      <form class="container-fluid" style="padding-top: 2%;">
-                          <div class="form-group row">
-                              <div class="col mx-auto">
-                                  <input type="text" class="form-control" id="exampleFormControlInput1"
-                                      placeholder="Full name" required>
-                              </div>
-                          </div>
-                          <div class="form-group row">
-                              <div class="col mx-auto">
-                                  <input type="email" class="form-control" id="exampleFormControlInput1"
-                                      placeholder="name@example.com" required>
-                              </div>
-                          </div>
-                          <div class="form-group row">
-                              <div class="col mx-auto">
-                                  <textarea class="form-control" id="exampleFormControlTextarea1"
-                                      placeholder="Query goes here...." rows="8" required></textarea>
-                              </div>
-                          </div>
-                          <button class="btn btnprop2 mx-auto btn-primary">
-                              Submit
-                          </button>
-                      </form>
+                        <form class="container-fluid" style="padding-top: 2%;">
+                            <div class="form-group row">
+                                <div class="col mx-auto">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Full name" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col mx-auto">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col mx-auto">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        placeholder="Query goes here...." rows="8" required></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btnprop2 mx-auto btn-primary">
+                                Submit
+                            </button>
+                        </form>
                     </div>
                 </div>
-                
+
                 <div class="card-body crd-bg" style="margin: 2% 0;overflow: hidden;">
                     <a data-aos="fade-down-right" data-aos-duration="1500" href="#"
                         class="btn btnprop btn-primary">Message on <i class="fa icon fa-whatsapp"
@@ -375,10 +383,10 @@
                     </div>
                 </div>
 
-                </div>
+            </div>
 
-                <!-- Grid row-->
-                
+            <!-- Grid row-->
+
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3" style="font-weight:100;color: white;">© 2020 Copyright:
                 <a href="#" style="font-weight: 300;">Harsh Soni</a>
@@ -402,6 +410,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
         AOS.init();
     </script>
